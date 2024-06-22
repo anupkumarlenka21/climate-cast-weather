@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Climate Cast</title>
+    <link rel="shortcut icon" href="./Assets/Icon/weather.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- BACKGROUND AUDIO -->
+  
+  <audio src="./Assets/Audio Files/Main BGM.mp3" autoplay loop></audio>
+
+
+  <!-- MAIN VIEW STARTING -->
+  
+  <main id="full_view">
+    
+    <!-- INPUT FIELD -->
+    
+    <section id="input_field">
+      
+      <!-- input button structure -->
+      
+      <form><i class="fa-solid fa-location-dot"></i>
+                <input type="text" id="location" placeholder="Enter location for weather information" autocomplete="off">
+                <button id="get_info_button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            
+            <!-- weather condition details structure -->
+            
+            <article id="temp_humidity">
+              <aside id="temperature">
+                <h1>Temperature</h1>
+                <p id="temperature_value">0 °C</p>
+              </aside>
+              <aside id="humidity">
+                <h1>Humidity</h1>
+                <p id="humidity_value">0 %</p>
+              </aside>
+              <aside id="wind_speed">
+                <h1>Wind Speed</h1>
+                <p id="windspeed_value">0 km/ph</p>
+              </aside>
+              <aside id="weather_condition">
+                <h1>Weather Condition</h1>
+                <p id="weathercondition_value">--</p>
+              </aside>
+            </article>
+
+            <!-- SUNRISE, SUNSET & VISIBILITY INFORMATION -->
+
+            <article id="sunrise_sunset_visibility">
+              <aside id="sunrise">
+                <h1>Sunrise</h1>
+                <p id="sunrise_value">am</p>
+              </aside>
+              <aside id="sunset">
+                <h1>Sunset</h1>
+                <p id="sunset_value">pm</p>
+              </aside>
+              <aside id="visibility">
+                <h1>Visibility</h1>
+                <p id="visibility_value">km</p>
+              </aside>
+
+              <!-- WEATHER OF SOME COMMON PLACES -->
+
+            </article>
+           <h1 id="woscp">Weather Of Some Common Places</h1>
+
+           <article id="common_place_weather">
+
+            <!-- PLACE SECTION -->
+
+            <aside id="place">
+            <h3 class="titles">Place</h3>
+            <p class="titles">Abu Dhabi</p>
+            <p class="titles">Washington D.C.</p>
+            <p class="titles">Beijing</p>
+            <p class="titles">New Delhi</p>
+            <p class="titles">Kolkata</p>
+            <p class="titles">Bhubaneswar</p>
+          </aside>
+
+          <!-- TEMPERATURE SECTION -->
+
+          <aside id="place_temperature">
+            <h3 class="titles">Temperature</h3>
+            <p class="data abu_dhabi_temperature">°C</p>
+            <p class="data washington_temperature">°C</p>
+            <p class="data beijing_temperature">°C</p>
+            <p class="data new_delhi_temperature">°C</p>
+            <p class="data kolkata_temperature">°C</p>
+            <p class="data bhubaneswar_temperature">°C</p>
+          </aside>
+
+          <!-- HUMIDITY SECTION -->
+
+          <aside id="place_humidity">
+            <h3 class="titles">Humidity</h3>
+            <p class="data abu_dhabi_humidity">%</p>
+            <p class="data washington_humidity">%</p>
+            <p class="data beijing_humidity">%</p>
+            <p class="data new_delhi_humidity">%</p>
+            <p class="data kolkata_humidity">%</p>
+            <p class="data bhubaneswar_humidity">%</p>
+          </aside>
+
+          <!-- WIND SPEED SECTION -->
+
+          <aside id="place_windspeed">
+            <h3 class="titles">Wind Speed</h3>
+            <p class="data abu_dhabi_wind_speed">km/h</p>
+            <p class="data washington_wind_speed">km/h</p>
+            <p class="data beijing_wind_speed">km/h</p>
+            <p class="data new_delhi_wind_speed">km/h</p>
+            <p class="data kolkata_wind_speed">km/h</p>
+            <p class="data bhubaneswar_wind_speed">km/h</p>
+          </aside>
+          
+          <!-- WEATHER CONDITION SECTION-->
+          
+          <aside id="place_weather_condition">
+            <h3 class="titles">Condition</h3>
+            <p class="data abu_dhabi_weather_condition">--</p>
+            <p class="data washington_weather_condition">--</p>
+            <p class="data beijing_weather_condition">--</p>
+            <p class="data new_delhi_weather_condition">--</p>
+            <p class="data kolkata_weather_condition">--</p>
+            <p class="data bhubaneswar_weather_condition">--</p>
+          </aside>
+
+          <!-- VISIBILITY SECTION-->
+         
+          <aside id="place_visibility">
+          <h3 class="titles">Visibility</h3>
+            <p class="data abu_dhabi_visibility">km</p>
+            <p class="data washington_visibility">km</p>
+            <p class="data beijing_visibility">km</p>
+            <p class="data new_delhi_visibility">km</p>
+            <p class="data kolkata_visibility">km</p>
+            <p class="data bhubaneswar_visibility">km</p>
+          </aside>
+           </article>
+          </section>
+        </main>
+
+
+<!-- WATER RIPPLE ANIMATION -->
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+ <script src="script.js"></script>
+      </body>
+</html>
